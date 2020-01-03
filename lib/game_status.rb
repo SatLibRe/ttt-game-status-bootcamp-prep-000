@@ -58,14 +58,9 @@ end
 # end 
 
 def winner(board)
-  WIN_COMBINATIONS.each do |combo|
-    if combo.all? {|idx| board[idx] == "X"}
-      return "X"
-    elsif combo.all? {|idx| board[idx] == "O"}
-      return "O"
-    else
-    end
-  end
-  nil
+  WIN_COMBINATIONS.each do |win_array|
+    if win_array.all? {|index| board[index] == "X"}
+      "X"
+    end 
 end
 
