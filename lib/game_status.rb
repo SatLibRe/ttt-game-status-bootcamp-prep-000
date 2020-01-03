@@ -64,5 +64,8 @@ def winner(board)
     if win_array.all? {|index| board[index] == "X"}
       "X"
     end 
+    elsif win_array.all? {|index| board[index] == "O"}
+      "o"
+    end 
 end
 
