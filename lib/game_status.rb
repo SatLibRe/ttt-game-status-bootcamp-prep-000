@@ -65,7 +65,8 @@ def winner(board)
       "X"
     end 
     elsif win_array.all? {|index| board[index] == "O"}
-      "o"
+      "O"
     end 
+   nil  
 end
 
